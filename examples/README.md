@@ -5,8 +5,20 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 Try running some of the following tasks:
 
 ```shell
-npx hardhat help
+
+# Test
 npx hardhat test
+
+# Deploy
+npx hardhat compile
+npx hardhat run scripts/deploy.js <network>
+
+# List Accounts
+npx hardhat node
+```
+
+
+npx hardhat help
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
