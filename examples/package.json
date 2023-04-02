@@ -1,14 +1,15 @@
 {
   "name": "examples",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample Bond Baseline Tokenization using Hardhat Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["blockchain", "DLT", "tokenization", "token", "bond", "smart contracts", "finance", "asset"],
+  "author": "Milben Tan",
+  "license": "GNU",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "hardhat": "^2.13.0"
