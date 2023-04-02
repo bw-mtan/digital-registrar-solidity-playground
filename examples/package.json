@@ -7,11 +7,23 @@
     "test": "npx hardhat test",
     "compile": "npx hardhat compile"
   },
-  "keywords": ["blockchain", "DLT", "tokenization", "token", "bond", "smart contracts", "finance", "asset"],
+  "keywords": [
+    "blockchain",
+    "DLT",
+    "tokenization",
+    "token",
+    "bond",
+    "smart contracts",
+    "finance",
+    "asset"
+  ],
   "author": "Milben Tan",
   "license": "GNU",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@openzeppelin/contracts": "^4.8.2",
+    "ethers": "^5.7.2",
     "hardhat": "^2.13.0"
   }
 }
