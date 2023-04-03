@@ -30,6 +30,10 @@ async function main() {
   const Example1 = await ethers.getContractFactory("Example1");
   const example1 = await Example1.deploy(ISSUERNAME,ISSUERSYMBOL,18, 2500);
   console.log("Contract BondExample1 deployed to: ", example1.address);
+
+  const Example2 = await ethers.getContractFactory("Example2");
+  const example2 = await Example2.deploy(1000);
+  console.log("Contract BondExample2 deployed to: ", example2.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

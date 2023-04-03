@@ -9,7 +9,7 @@ describe("Contract: BondExample4", () => {
     const _MAX_SUPPLY = 2000;
 
     beforeEach(async () => {
-        [owner, investor1, investor2] = await ethers.getSigners();
+        [owner] = await ethers.getSigners();
         BondToken = await ethers.getContractFactory("Example4");
         bondToken = await BondToken.deploy(_ISSUERNAME, _ISSUERSYMBOL, owner.address, _MAX_SUPPLY );
     });
@@ -39,5 +39,4 @@ describe("Contract: BondExample4", () => {
          expect(await bondToken.totalSupply()).to.equal(ethers.BigNumber.from("2000"))
         expect(await bondToken.bondBalances(owner.address)).to.equal(ethers.BigNumber.from("2000"));
     });
-
 });
